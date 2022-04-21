@@ -29,6 +29,14 @@ h3 {
 	margin: 0;
 }
 
+@media only screen and (max-width: 900px) {
+
+	.img, .article {
+		width: 80vw !important;
+		height: 80vw !important;
+	}
+}
+
 @media only screen and (max-width: 1300px) {
 	article {
 		display: flex;
