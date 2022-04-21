@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&display=swap');
+
+/*https://coolors.co/2d7dd2-97cc04-eeb902-f45d01-474647*/
+
+:root {
+	--bg-color: #97CC04;
+	--pr-color: #EEB902;
+	--sc-color: #F45D01;
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+
+	margin: 0;
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+header {
+	background-color: var(--bg-color);
+	padding: 1vh 5vw;
+}
+
+h1, h2, h3 {
+	font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+	margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+	article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img, .article {
+		margin: 5vh 0;
+		width: 40vw;
+		height: 40vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1301px) {
+	article {
+		display: inline-flex;
+		margin: 0 17.5vw 0 17.5vw;
+	}
+
+	.img, .article {
+		background-color: var(--sc-color);
+		border-radius: 2vh;
+		padding: 2vh;
+		margin: 5vh 5vw 5vh 0;
+		height: 20vw;
+	}
+	
+	.img {
+		width: 20vw;
+	}
+
+	.article {
+		width: 30vw;
+	}
+}
+
+.img, .article {
+	background-color: var(--sc-color);
+	border-radius: 2vh;
+	padding: 2vh;
+}
+
+
+.img img {
+	width: 100%;
+	border-radius: 2vh;
+}
+
+.article {
+	overflow-y: auto;
+	text-align: justify;
+}
+
+.article::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+.article::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+footer {
+	background-color: rgb(200, 200, 200);
+	text-align: center;
+    padding: 2vh 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
